@@ -1,0 +1,52 @@
+
+input:not([type]):not([readonly]), input[type=text]:not([readonly]), input[type=password]:not([readonly]), input[type=email]:not([readonly]), input[type=url]:not([readonly]), input[type=time]:not([readonly]), input[type=date]:not([readonly]), input[type=datetime]:not([readonly]), input[type=datetime-local]:not([readonly]), input[type=tel]:not([readonly]), input[type=number], input[type=search]:not([readonly]), textarea.materialize-textarea:not([readonly]) {
+	border: 1px solid rgb(218,220,224);
+	padding-left:5px;
+	transition: 0.2s;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number], input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border: 1px solid rgb(218,220,224);
+}
+.paper-button{
+border: none;
+border-radius: 4px;
+flex-shrink: 0;
+background-color: transparent;
+color: rgb(51, 103, 214);
+text-transform: none;
+font-weight: 500;
+font-size:12px;
+padding: 0 1em;
+background-color:rgb(51, 103, 214)!important;
+}
+body{
+	font-family: 'Google Sans'!important;
+}
+.help-inline{
+	color:red;
+	font-size:12px;
+	font-weight: 500;
+}
+.alert.alert-success{
+	color:#21ba45;
+}
+.current-link{
+	color:#fff;
+}
+.paper-button{
+	border: none;
+	border-radius: 4px;
+	flex-shrink: 0;
+	background-color: transparent;
+	color: rgb(51, 103, 214);
+	text-transform: none;
+	font-weight: 500;
+    padding: 0 1em;
+}
+.sweet-alert h2,.sweet-alert p{
+	font-family: 'Google Sans';
+}
+.sweet-alert button{
+	font-family: 'Google Sans';
+}

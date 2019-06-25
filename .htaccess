@@ -1,0 +1,24 @@
+#HTTP ACCESS CONFIGURATION FILE
+RewriteEngine On
+Options -Indexes
+#Enforce a trailing slash policy
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*[^/])$ /$1/ [L,R]
+RewriteRule ^index.php$ / [NC,R=302]
+RewriteRule ^login/$ /views/login.php [NC,L]
+RewriteRule ^new-surburb/$ /views/add_surbub.php [NC,L]
+RewriteRule ^admin/$ /views/admin_home.php [L]
+RewriteRule ^home/$ /views/normal_user_home.php [L]
+RewriteRule ^rentals/$ /views/rentals.php [L]
+RewriteRule ^delete-rental/$ /views/delete_rental.php [L]
+RewriteRule ^add-rental/$ /views/new-rental.php [L]
+RewriteRule ^confirm-new-rental-details/$ /views/confirm_new_rental.php [L]
+RewriteRule ^signout/$ /api/logout.php [L]
+RewriteRule ^profile/$ /views/account.php [L]
+RewriteRule ^forgot-password/$ /views/forgot_password.php [L]
+RewriteRule ^reset-password/$ /views/change_password.php [L]
+RewriteRule ^register/$ /views/register.php [NC,L]
+RewriteRule ^forms/register/$ /api/register.php [L]
+RewriteRule ^rental/([0-9]+)/$ /views/rental.php?rental=$1 [L]
+RewriteRule ^books/$ /views/book.php
+
